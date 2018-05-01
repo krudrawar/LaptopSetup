@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH:/box/www/devtools_readonly/bin
+export PATH=$HOME/apache-maven-3.5.0/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/krudrawar/.oh-my-zsh
