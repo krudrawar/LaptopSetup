@@ -93,6 +93,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias a="cd ~/appconf"
+alias b="ssh bastion"
+alias c="cd /box/www/current_local"
+alias d="cd ~/deployment-config"
+alias i="cd ~/infra"
+alias s="cd ~/infra/scala"
+alias gs="git status"
+alias gl="git log"
+alias gb="git branch"
+alias gp="git pull"
+alias pg="pushgerrit"
+alias sbt="sbt -Dbox.appconf.fromFiles=true"
 
 autoload -U promptinit; promptinit
 prompt pure
+
+# Must be last thing in this file
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
