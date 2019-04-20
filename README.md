@@ -10,3 +10,10 @@
 8. Set it iterm2 -> Preferences -> Colors -> Color Preset: Snazzy
 9. Change text font to 14pt Monaco
 10. Launch sublime from command line: https://gist.github.com/adrianorsouza/df4759b0583dcd112da4
+
+
+# Applications
+1. f.lux
+2. Spectacle
+3. Alfred
+
