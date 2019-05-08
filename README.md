@@ -2,7 +2,9 @@
 
 1. Install Brew
 2. Install zsh
-3. Install zsh-syntax-highlighting
+3. Install plugins:
+  - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  - git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 4. Install npm using Brew
 5. Install Pure iterm2 prompt: https://github.com/sindresorhus/pure
 6. Download .zshrc from this repo into ~/.zshrc
@@ -16,4 +18,3 @@
 1. f.lux
 2. Spectacle
 3. Alfred
-
