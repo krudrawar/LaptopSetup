@@ -62,7 +62,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git,
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
   colored-man-pages
 )
 
@@ -111,6 +113,3 @@ alias sbt="sbt -Dbox.appconf.fromFiles=true"
 
 autoload -U promptinit; promptinit
 prompt pure
-
-# Must be last thing in this file
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
