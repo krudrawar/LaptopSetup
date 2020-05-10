@@ -12,8 +12,10 @@
 5. Install Pure iterm2 prompt: https://github.com/sindresorhus/pure
   - $ npm install --global pure-prompt
 6. Download .zshrc from this repo into ~/.zshrc
-7. Download iterm2 Snazzy Color Preset. 
-8. Set it iterm2 -> Preferences -> Colors -> Color Preset: Snazzy
+7. Download iTerm2 Snazzy Color Preset from this repo 
+8. Download keymappings from this repo
+9. Set iTerm2 -> Preferences -> Profiles -> Colors -> Import -> Color Preset: Snazzy
+10. Set iTerm2 -> Preferences -> Profiles -> Keys -> Presents -> Color Preset: Snazzy
 
 
 # Applications
