@@ -15,7 +15,7 @@
 7. Download iTerm2 Snazzy Color Preset from this repo 
 8. Download keymappings from this repo
 9. Set iTerm2 -> Preferences -> Profiles -> Colors -> Import -> Color Preset: Snazzy
-10. Set iTerm2 -> Preferences -> Profiles -> Keys -> Presents -> Color Preset: Snazzy
+10. Set iTerm2 -> Preferences -> Profiles -> Keys -> Presets -> Import -> keymappings file
 
 
 # Applications
