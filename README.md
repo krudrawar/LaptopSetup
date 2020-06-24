@@ -16,6 +16,7 @@
 8. Download keymappings from this repo
 9. Set iTerm2 -> Preferences -> Profiles -> Colors -> Import -> Color Preset: Snazzy
 10. Set iTerm2 -> Preferences -> Profiles -> Keys -> Presets -> Import -> keymappings file
+11. Install z: https://github.com/rupa/z
 
 
 # Applications
