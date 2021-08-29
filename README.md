@@ -14,10 +14,16 @@
 7. Download iterm2 Snazzy Color Preset. 
 8. Set it iterm2 -> Preferences -> Colors -> Color Preset: Snazzy
 9. Change text font to 14pt Monaco
-10. Launch sublime from command line: https://gist.github.com/adrianorsouza/df4759b0583dcd112da4
+
+
+## fzf
+
+- `brew install fzf`
+- Download `.fzf.zsh` from this repo to `~/`
+- Try Ctrl+r in terminal, it should work. 
 
 
 # Applications
 1. f.lux
-2. Spectacle
+2. Rectangle
 3. Alfred
