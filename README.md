@@ -29,9 +29,19 @@
 
 ## fzf
 
+### Mac (brew)
+
 - `brew install fzf`
-- Download `.fzf.zsh` from this repo to `~/`
 - Try Ctrl+r in terminal, it should work.
+
+If it doesn't:
+
+Follow [instructions here](https://github.com/junegunn/fzf#using-git).
+
+### Linux
+
+- `sudo apt-get install fzf`
+- Follow [instructions here](https://github.com/junegunn/fzf#using-git).
 
 # Applications
 
