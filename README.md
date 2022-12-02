@@ -32,6 +32,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 ### Mac (brew)
 
 - `brew install fzf`
+- `/opt/homebrew/opt/fzf/install`
 - Try Ctrl+r in terminal, it should work.
 
 If it doesn't:
