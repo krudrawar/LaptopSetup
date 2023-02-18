@@ -1,6 +1,7 @@
-#If you come from bash you might have to change your $PATH.
+#if you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=$PATH:/Users/kedar/bin
 export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit-4.12.jar:.
 
 # create npm global directory
@@ -17,8 +18,12 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/KedarRudrawar/.oh-my-zsh"
+export ZSH="/Users/kedar/.oh-my-zsh"
 
+# Path to aurelia 
+# export PATH=$PATH:$HOME/aurelia/bin
+
+ZSH_DISABLE_COMPFIX=true
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -135,3 +140,33 @@ fi
 
 autoload -U promptinit; promptinit
 prompt pure
+source $HOME/.benchling-dotfiles/.zshrc.benchling
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(pyenv init -)"
+
+cd ~/aurelia/
+ssh-add -K ~/.ssh/id_rsa &> /dev/null
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# for tmux
+# Nvm deactivate &> /dev/null
+
+function update_everything() {
+  set -e
+  aws_prod bin/dev pull
+  bin/dev install-dev-tools
+  bin/dev requirements
+  source scripts/dev/upgrade_node
+  bin/dev yarn install
+}
+
+export AURELIA_USER=kedar
+export AWS_OKTA_MFA_PROVIDER=okta
+export AWS_OKTA_MFA_FACTOR_TYPE=push
+
+eval "$(pyenv virtualenv-init -)"
+source ~/.iterm2_shell_integration.zsh
