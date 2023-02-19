@@ -138,16 +138,18 @@ if command -v brew >/dev/null 2>&1; then
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
+
+fpath+=$HOME/.zsh/pure
+
 autoload -U promptinit; promptinit
 prompt pure
-source $HOME/.benchling-dotfiles/.zshrc.benchling
+# source $HOME/.benchling-dotfiles/.zshrc.benchling
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
-cd ~/aurelia/
 ssh-add -K ~/.ssh/id_rsa &> /dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -168,5 +170,8 @@ export AURELIA_USER=kedar
 export AWS_OKTA_MFA_PROVIDER=okta
 export AWS_OKTA_MFA_FACTOR_TYPE=push
 
-eval "$(pyenv virtualenv-init -)"
-source ~/.iterm2_shell_integration.zsh
+# eval "$(pyenv virtualenv-init -)"
+# source ~/.iterm2_shell_integration.zsh
+export PATH=/opt/homebrew/bin:/usr/local/opt/ruby/bin:/Users/kedar/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kedar/bin:/opt/homebrew/opt/fzf/bin
+
+. /opt/homebrew/Cellar/z/1.9/etc/profile.d/z.sh
