@@ -14,8 +14,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 
 4. Install npm using Brew: `brew install npm`
 5. Install Pure iterm2 prompt: https://github.com/sindresorhus/pure
-
-- `npm install --global pure-prompt`
+- mkdir -p "$HOME/.zsh"
+- git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 
 6. Download .zshrc from this repo into `~/.zshrc`
 7. Download iterm2 Snazzy Color Preset.
