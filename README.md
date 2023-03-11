@@ -49,3 +49,4 @@ Follow [instructions here](https://github.com/junegunn/fzf#using-git).
 1. f.lux
 2. Rectangle
 3. Alfred
+4. Contexts
